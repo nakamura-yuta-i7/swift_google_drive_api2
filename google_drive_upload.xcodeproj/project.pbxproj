@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EC22FA4A6A3C8F30C95B4CB /* Pods_google_drive_uploadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F589149B19710454DD8BF4B /* Pods_google_drive_uploadTests.framework */; };
+		8FA8421E8E8B8A9FBAF3C824 /* Pods_google_drive_upload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7091B12211F4F9C7C07900E9 /* Pods_google_drive_upload.framework */; };
+		D054693D80549C44F7A36C7F /* Pods_google_drive_uploadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B6908E23D9A2DDFBD46B4A /* Pods_google_drive_uploadUITests.framework */; };
 		D683A8601DAA035700DA43CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A85F1DAA035700DA43CF /* AppDelegate.swift */; };
 		D683A8621DAA035700DA43CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8611DAA035700DA43CF /* ViewController.swift */; };
 		D683A8651DAA035700DA43CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683A8631DAA035700DA43CF /* Main.storyboard */; };
@@ -14,6 +17,11 @@
 		D683A86A1DAA035700DA43CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683A8681DAA035700DA43CF /* LaunchScreen.storyboard */; };
 		D683A8751DAA035700DA43CF /* google_drive_uploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8741DAA035700DA43CF /* google_drive_uploadTests.swift */; };
 		D683A8801DAA035700DA43CF /* google_drive_uploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A87F1DAA035700DA43CF /* google_drive_uploadUITests.swift */; };
+		D683A88F1DAA05C000DA43CF /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A88E1DAA05C000DA43CF /* FilesViewController.swift */; };
+		D683A8931DAA069000DA43CF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8921DAA069000DA43CF /* File.swift */; };
+		D683A8951DAA0ACE00DA43CF /* tori.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D683A8941DAA0ACE00DA43CF /* tori.jpg */; };
+		D683A8971DAA16C900DA43CF /* GoogleDriveApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8961DAA16C900DA43CF /* GoogleDriveApi.swift */; };
+		D683A8991DAA1A3700DA43CF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D683A8981DAA1A3700DA43CF /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F589149B19710454DD8BF4B /* Pods_google_drive_uploadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_drive_uploadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B6908E23D9A2DDFBD46B4A /* Pods_google_drive_uploadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_drive_uploadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		336AD2E196E61527CFCA80C6 /* Pods-google_drive_upload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_drive_upload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google_drive_upload/Pods-google_drive_upload.debug.xcconfig"; sourceTree = "<group>"; };
+		5631D10FA6281BC5DB94621E /* Pods-google_drive_uploadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_drive_uploadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-google_drive_uploadUITests/Pods-google_drive_uploadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7091B12211F4F9C7C07900E9 /* Pods_google_drive_upload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_drive_upload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8B3BC3DC1B0B34E90BF021 /* Pods-google_drive_uploadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_drive_uploadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google_drive_uploadTests/Pods-google_drive_uploadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B827EA189290889CF028C9A6 /* Pods-google_drive_uploadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_drive_uploadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-google_drive_uploadTests/Pods-google_drive_uploadTests.release.xcconfig"; sourceTree = "<group>"; };
+		B99207AE565BF11A4FADC791 /* Pods-google_drive_upload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_drive_upload.release.xcconfig"; path = "Pods/Target Support Files/Pods-google_drive_upload/Pods-google_drive_upload.release.xcconfig"; sourceTree = "<group>"; };
+		C273874D526779E295F53461 /* Pods-google_drive_uploadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_drive_uploadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google_drive_uploadUITests/Pods-google_drive_uploadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D683A85C1DAA035700DA43CF /* google_drive_upload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = google_drive_upload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D683A85F1DAA035700DA43CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D683A8611DAA035700DA43CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,12 @@
 		D683A87B1DAA035700DA43CF /* google_drive_uploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = google_drive_uploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D683A87F1DAA035700DA43CF /* google_drive_uploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = google_drive_uploadUITests.swift; sourceTree = "<group>"; };
 		D683A8811DAA035700DA43CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D683A88D1DAA056500DA43CF /* google_drive_upload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = google_drive_upload.entitlements; sourceTree = "<group>"; };
+		D683A88E1DAA05C000DA43CF /* FilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		D683A8921DAA069000DA43CF /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		D683A8941DAA0ACE00DA43CF /* tori.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tori.jpg; sourceTree = "<group>"; };
+		D683A8961DAA16C900DA43CF /* GoogleDriveApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveApi.swift; sourceTree = "<group>"; };
+		D683A8981DAA1A3700DA43CF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA8421E8E8B8A9FBAF3C824 /* Pods_google_drive_upload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC22FA4A6A3C8F30C95B4CB /* Pods_google_drive_uploadTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +93,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D054693D80549C44F7A36C7F /* Pods_google_drive_uploadUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E6E88F83D3B633832033EA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7091B12211F4F9C7C07900E9 /* Pods_google_drive_upload.framework */,
+				0F589149B19710454DD8BF4B /* Pods_google_drive_uploadTests.framework */,
+				22B6908E23D9A2DDFBD46B4A /* Pods_google_drive_uploadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D683A8531DAA035700DA43CF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				D683A8731DAA035700DA43CF /* google_drive_uploadTests */,
 				D683A87E1DAA035700DA43CF /* google_drive_uploadUITests */,
 				D683A85D1DAA035700DA43CF /* Products */,
+				E5308B83B87D83B59F6F8E85 /* Pods */,
+				8E6E88F83D3B633832033EA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +135,18 @@
 		D683A85E1DAA035700DA43CF /* google_drive_upload */ = {
 			isa = PBXGroup;
 			children = (
+				D683A8981DAA1A3700DA43CF /* background.jpg */,
+				D683A8941DAA0ACE00DA43CF /* tori.jpg */,
+				D683A88D1DAA056500DA43CF /* google_drive_upload.entitlements */,
 				D683A85F1DAA035700DA43CF /* AppDelegate.swift */,
 				D683A8611DAA035700DA43CF /* ViewController.swift */,
 				D683A8631DAA035700DA43CF /* Main.storyboard */,
 				D683A8661DAA035700DA43CF /* Assets.xcassets */,
 				D683A8681DAA035700DA43CF /* LaunchScreen.storyboard */,
 				D683A86B1DAA035700DA43CF /* Info.plist */,
+				D683A88E1DAA05C000DA43CF /* FilesViewController.swift */,
+				D683A8921DAA069000DA43CF /* File.swift */,
+				D683A8961DAA16C900DA43CF /* GoogleDriveApi.swift */,
 			);
 			path = google_drive_upload;
 			sourceTree = "<group>";
@@ -125,6 +169,19 @@
 			path = google_drive_uploadUITests;
 			sourceTree = "<group>";
 		};
+		E5308B83B87D83B59F6F8E85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				336AD2E196E61527CFCA80C6 /* Pods-google_drive_upload.debug.xcconfig */,
+				B99207AE565BF11A4FADC791 /* Pods-google_drive_upload.release.xcconfig */,
+				9E8B3BC3DC1B0B34E90BF021 /* Pods-google_drive_uploadTests.debug.xcconfig */,
+				B827EA189290889CF028C9A6 /* Pods-google_drive_uploadTests.release.xcconfig */,
+				C273874D526779E295F53461 /* Pods-google_drive_uploadUITests.debug.xcconfig */,
+				5631D10FA6281BC5DB94621E /* Pods-google_drive_uploadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D683A8841DAA035700DA43CF /* Build configuration list for PBXNativeTarget "google_drive_upload" */;
 			buildPhases = (
+				1E1AF9C9E3802B9DE7C2AEA3 /* [CP] Check Pods Manifest.lock */,
 				D683A8581DAA035700DA43CF /* Sources */,
 				D683A8591DAA035700DA43CF /* Frameworks */,
 				D683A85A1DAA035700DA43CF /* Resources */,
+				77A1F67324C1A1097AED0311 /* [CP] Embed Pods Frameworks */,
+				FAA1CAE655178B885F24B010 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D683A8871DAA035700DA43CF /* Build configuration list for PBXNativeTarget "google_drive_uploadTests" */;
 			buildPhases = (
+				75E6EB3DFFC615AED2130E5B /* [CP] Check Pods Manifest.lock */,
 				D683A86C1DAA035700DA43CF /* Sources */,
 				D683A86D1DAA035700DA43CF /* Frameworks */,
 				D683A86E1DAA035700DA43CF /* Resources */,
+				40BEB0668535509E4287A1AA /* [CP] Embed Pods Frameworks */,
+				692C0E33F7134CCA840BED3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D683A88A1DAA035700DA43CF /* Build configuration list for PBXNativeTarget "google_drive_uploadUITests" */;
 			buildPhases = (
+				850AA1A05710377BD76F81A3 /* [CP] Check Pods Manifest.lock */,
 				D683A8771DAA035700DA43CF /* Sources */,
 				D683A8781DAA035700DA43CF /* Frameworks */,
 				D683A8791DAA035700DA43CF /* Resources */,
+				783936445A9E427F968AF24D /* [CP] Embed Pods Frameworks */,
+				8E135F79CC90B927FB5E6DAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,15 +259,24 @@
 				TargetAttributes = {
 					D683A85B1DAA035700DA43CF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8RMNYW4KE5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					D683A86F1DAA035700DA43CF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D683A85B1DAA035700DA43CF;
 					};
 					D683A87A1DAA035700DA43CF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D683A85B1DAA035700DA43CF;
 					};
@@ -232,6 +307,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D683A8951DAA0ACE00DA43CF /* tori.jpg in Resources */,
+				D683A8991DAA1A3700DA43CF /* background.jpg in Resources */,
 				D683A86A1DAA035700DA43CF /* LaunchScreen.storyboard in Resources */,
 				D683A8671DAA035700DA43CF /* Assets.xcassets in Resources */,
 				D683A8651DAA035700DA43CF /* Main.storyboard in Resources */,
@@ -254,12 +331,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E1AF9C9E3802B9DE7C2AEA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40BEB0668535509E4287A1AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_drive_uploadTests/Pods-google_drive_uploadTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		692C0E33F7134CCA840BED3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_drive_uploadTests/Pods-google_drive_uploadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E6EB3DFFC615AED2130E5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77A1F67324C1A1097AED0311 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_drive_upload/Pods-google_drive_upload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		783936445A9E427F968AF24D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_drive_uploadUITests/Pods-google_drive_uploadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		850AA1A05710377BD76F81A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E135F79CC90B927FB5E6DAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_drive_uploadUITests/Pods-google_drive_uploadUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAA1CAE655178B885F24B010 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_drive_upload/Pods-google_drive_upload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D683A8581DAA035700DA43CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D683A8621DAA035700DA43CF /* ViewController.swift in Sources */,
+				D683A8971DAA16C900DA43CF /* GoogleDriveApi.swift in Sources */,
+				D683A8931DAA069000DA43CF /* File.swift in Sources */,
+				D683A88F1DAA05C000DA43CF /* FilesViewController.swift in Sources */,
 				D683A8601DAA035700DA43CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +551,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +601,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -408,8 +628,12 @@
 		};
 		D683A8851DAA035700DA43CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336AD2E196E61527CFCA80C6 /* Pods-google_drive_upload.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = google_drive_upload/google_drive_upload.entitlements;
+				DEVELOPMENT_TEAM = 8RMNYW4KE5;
 				INFOPLIST_FILE = google_drive_upload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnkmr.google-drive-upload";
@@ -420,8 +644,12 @@
 		};
 		D683A8861DAA035700DA43CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99207AE565BF11A4FADC791 /* Pods-google_drive_upload.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = google_drive_upload/google_drive_upload.entitlements;
+				DEVELOPMENT_TEAM = 8RMNYW4KE5;
 				INFOPLIST_FILE = google_drive_upload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnkmr.google-drive-upload";
@@ -432,6 +660,7 @@
 		};
 		D683A8881DAA035700DA43CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8B3BC3DC1B0B34E90BF021 /* Pods-google_drive_uploadTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +675,7 @@
 		};
 		D683A8891DAA035700DA43CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B827EA189290889CF028C9A6 /* Pods-google_drive_uploadTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +690,7 @@
 		};
 		D683A88B1DAA035700DA43CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C273874D526779E295F53461 /* Pods-google_drive_uploadUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = google_drive_uploadUITests/Info.plist;
@@ -473,6 +704,7 @@
 		};
 		D683A88C1DAA035700DA43CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5631D10FA6281BC5DB94621E /* Pods-google_drive_uploadUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = google_drive_uploadUITests/Info.plist;
@@ -503,6 +735,7 @@
 				D683A8861DAA035700DA43CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D683A8871DAA035700DA43CF /* Build configuration list for PBXNativeTarget "google_drive_uploadTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +744,7 @@
 				D683A8891DAA035700DA43CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D683A88A1DAA035700DA43CF /* Build configuration list for PBXNativeTarget "google_drive_uploadUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +753,7 @@
 				D683A88C1DAA035700DA43CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
