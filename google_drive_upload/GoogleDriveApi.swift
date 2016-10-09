@@ -16,20 +16,24 @@ class GoogleDriveApi {
     fileprivate let kClientID = "577359574054-idbfg95lccqfkds8ouid5jf8ttm14c2p.apps.googleusercontent.com"
     fileprivate let service = GTLServiceDrive()
     
-    func upload(image:UIImage, name:String, mimeType:String) {
+    func upload(image:UIImage, name:String, mimeType:String, folderId:String, callback: @escaping () -> Void ) -> GTLServiceTicket {
+        
         let imageData = UIImagePNGRepresentation(image)! as NSData?
+        
         let metaData:GTLDriveFile? = GTLDriveFile()
         metaData?.name = name
+        metaData?.parents = [folderId]
+        
         let uP = GTLUploadParameters(data: imageData as! Data, mimeType: mimeType)
         let query = GTLQueryDrive.queryForFilesCreate(withObject: metaData, uploadParameters: uP)
         let serviceTicket = service.executeQuery(query!, completionHandler: {(ticket, file, error) -> Void in
-            print("complete")
+            callback()
         })
-        serviceTicket?.uploadProgressBlock = {(ticket, written, total) in
-            print("making progress, total: ", total)
-            print("making progress, written: ", written)
-        }
-        print("koko3")
+//        serviceTicket?.uploadProgressBlock = {(ticket, written, total) in
+//            print("making progress, total: ", total)
+//            print("making progress, written: ", written)
+//        }
+        return serviceTicket!
     }
     
     init() {

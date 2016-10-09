@@ -18,7 +18,13 @@ class FilesViewController: UIViewController {
         let image = UIImage(named: "background.jpg")!
         let name = "テスト画像ファイル3.png"
         let mimeType = "image/png"
-        api.upload(image: image, name: name, mimeType: mimeType)
+        let folderId = "0B0vk9XZ3993_dlhSSFlta3RqVEU"
+        let serviceTicket = api.upload(image: image, name: name, mimeType: mimeType, folderId: folderId, callback: {
+            print("★ complete drive upload.")
+        })
+        serviceTicket.uploadProgressBlock = {(ticket, written, total) in
+            print("making progress percent: ", "\(written)/\(total)")
+        }
     }
     
     override func viewDidLoad() {
